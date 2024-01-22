@@ -1,24 +1,27 @@
 class ItemDropDown {
-  const ItemDropDown(this.key,this.value,this.text);
-  final String key;
-  final String value;
-  final String text;
+  String code;
+  String label;
 
+  ItemDropDown({required this.code, required this.label });
+
+  factory ItemDropDown.fromJson(Map<String, dynamic> json) => ItemDropDown(
+    code: json['code'],
+    label: json['label'],
+  );
 
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
           other is ItemDropDown &&
               runtimeType == other.runtimeType &&
-              key == other.key &&
-              value == other.value &&
-              text == other.text;
+              code == other.code &&
+              label == other.label;
 
   @override
-  int get hashCode => key.hashCode ^ value.hashCode ^ text.hashCode;
+  int get hashCode => code.hashCode ^ label.hashCode;
 
   @override
   String toString() {
-    return 'ItemDropDown{key: $key, value: $value, text: $text}';
+    return 'ItemDropDown{code: $code, label: $label}';
   }
 }

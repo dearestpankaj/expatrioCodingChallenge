@@ -1,0 +1,6 @@
+{
+  "message": "Invalid authentication token.",
+  "clientMessage": "Invalid authentication token. Try to logout and login again.",
+  "errorCode": "INVALID_AUTH_TOKEN",
+  "data": null
+}

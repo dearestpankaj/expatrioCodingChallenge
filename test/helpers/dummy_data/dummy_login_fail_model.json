@@ -1,0 +1,9 @@
+{
+    "message": "Incorrect Credential (Attempt-0). Please enter correct username and/or password, the password will be locked after 3 unsuccessful attempts.",
+    "clientMessage": "Incorrect Credential (Attempt-0). Please enter correct username and/or password, the password will be locked after 3 unsuccessful attempts.",
+    "errorCode": "INVALID_LOGIN_OR_PASSWORD",
+    "data": {
+        "usedAttempts": 0,
+        "remainingAttempts": 3
+    }
+}
