@@ -19,8 +19,7 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    _usernameController.text = 'tito+bs792@expatrio.com';
-    _passwordController.text = 'nemampojma';
+
     return _loginForm();
   }
 
